@@ -2,96 +2,129 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Jiayu Mila Wang
+    # - name: Date of Birth
+    #   value: 14th March 1879
+    - name: Email
+      value: jwang2782 [at] wisc [dot] edu
     - name: Languages
-      value: English, German
+      value: Mandarin (Native), English (Fluent), Laotian (Fluent), Thai (Basic)
+
+- title: Skills
+  type: map
+  contents:
+    - name: Programming Languages
+      value: Python (PyTorch, NumPy, Pandas), Java, C++
+    - name: Data Visualization
+      value: Tableau, Power BI
+    - name: Database 
+      value: MySQL, MongoDB
+    - name: Web Development
+      value: HTML, CSS, JavaScript
+    - name: Statistics
+      value: Stata, R, SPSS
+    - name: Misc
+      value: Git, Linux, Shell, LaTeX
+    - name: Finance
+      value: Bloomberg, Wind, Pitchbook, Capital IQ
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+    - title: M.S. in Economics
+      institution: University of Wisconsin-Madison
+      year: 2022 - 2024
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Bachelor of Economics
+      institution: Peking University
+      year: 2018 - 2021
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+    - title: Bachelor of Arts
+      institution: Beijing Foreign Studies University
+      year: 2017 - 2021
+      # description:
+      #   - Description 1.
+      #   - Description 2.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Research Assistant
+      institution: UW-Madison Programming Language Group
+      year: Jan 2024 - Present
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Merger and Acquisition Intern
+      institution: Business Development @ Genesis Medtech Group
+      year: Apr 2020 - Aug 2020
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+    - title: Investment Intern
+      institution: Post-Investment Management @ Alpha Startup Fund
+      year: Jun 2021 - Sept 2021
+    - title: Intern
+      institution: Marketing @ GF Securities
+      year: Jul 2020 - Aug 2020
+    - title: Project Intern
+      institution: Investment Banking @ China International Capital Corporation
+      year: Mar 2020 - Apr 2020
+    - title: Research Assistant
+      institution: Peking University
+      year: Jan 2020 - Jun 2021
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+# - title: Honors and Awards
+#   type: time_table
+#   contents:
+#     - year: 1921
+#       items: 
+#         - Nobel Prize in Physics 
+#         - Matteucci Medal
+#     - year: 2029
+#       items: 
+#         - Max Planck Medal
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items: 
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
 
-- title: Open Source Projects
-  type: time_table
+- title: Certifications
+  type: map
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
+    - name: ACCA (Association of Chartered Certified Accountants) 
+      value: passed 11/13
+    - name: SAC (Securities Association of China)
+      value: passed
+  
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Tennis (National Second Level Athlete), Pipa, Chinese Dance, Classical Guitar
