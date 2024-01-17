@@ -15,5 +15,3 @@ social: true  # includes social icons at the bottom of the page
 ---
 Welcome! I am Jiayu (pronounciation: "Jee-ah-yü Wahng"), a final-year master's student in the Economics Department at University of Wisconsin-Madison graduating May 2024. I am currently conducting research with [Prof. Loris D'Antoni](https://pages.cs.wisc.edu/~loris/) at [MadPL Group](https://madpl.cs.wisc.edu/). My interests include machine learning, program synthesis and data analytics.
 
-**<span style="color: #DAA520;">I am actively seeking full-time positions in data, finance, and quantitative analysis, available to start from May 2024. :)</span>**
-
