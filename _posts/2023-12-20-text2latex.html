@@ -1,0 +1,157 @@
+---
+layout: post
+title: Unveiling the Potential of Language Models in LaTeX Synthesis
+date: 2023-12-20 10:18:00
+description: learning-based LaTeX code generation
+tags: ML code
+categories: blockquotes course-projects
+giscus_comments: true
+---
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jiayuww/text2latex/blob/main/cs703_Text2LaTeX_JiayuWang.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jiayuww/text2latex"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://github.com/jiayuww/text2latex"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Data</span>
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            LaTeX has been one of the de facto standards for the communication and publication of 
+            scientific documents. Generating LaTeX code that follows users' intentions is an important 
+            task in the digital age, which requires the model to understand user inputs presented in 
+            various formats and correctly generate grammatically correct code that can be rendered. 
+            Traditional rule-based methods, despite their high accuracy, often limit input to a 
+            specific format to generate valid LaTeX code, which substantially reduces the model's 
+            applicability. In reality, the same LaTeX expression might be represented in multiple 
+            formats such as images or textual descriptions. 
+          </p>
+          <p>
+            In this work, we investigate LaTeX program synthesis with foundation models that allow flexible inputs represented in 
+            texts or images. We propose to use a tree-based approach to generate LaTeX expressions 
+            with various diversity and scale. We observe that larger pre-trained models leads to 
+            improved performance. With an appropriate model, the prediction accuracy improves with 
+            an increase in both the size and complexity of the training set. Specifically, training 
+            on just 2500 samples (with a depth of 3) yields promising results, achieving 99.0% 
+            accuracy on test sets with expressions of depth-2, compared to 88.5% accuracy when 
+            training with the same sample size but a depth-2 input. This suggests the effectiveness 
+            of learning-based LaTeX code generation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+<section class="section" id="Main Results">
+    <h2 class="title">Main Results</h2>
+    <div class="row mt-3">
+      <!-- First row of images -->
+      <div class="col-md-6 mt-3">
+          {% include figure.html path="assets/img/text2latex/paramsize_acc.png" class="img-fluid rounded z-depth-1" %}
+          <div class="caption">
+            Test accuracy comparison of backbone models CodeGen-350M-mono vs CodeGen-2B-mono. A larger pre-trained model yields a higher accuracy rate.
+          </div>
+      </div>
+      <div class="col-md-6 mt-3">
+          {% include figure.html path="assets/img/text2latex/trainingsize_acc_red.png" class="img-fluid rounded z-depth-1" %}
+          <div class="caption">
+            Relationship between training size and test accuracy. Test accuracy improves with increasing training dataset size.
+          </div>
+      </div>
+  </div>
+
+<p>
+  <strong>Training on moderate-sized datasets achieves strong code generation performance.</strong>
+Notably, the model displays zero accuracy without fine-tuning (<em>i.e., if we directly evaluate
+   the pre-trained model on the test set without further fine-tuning on our generated dataset</em>). 
+   As shown in the figure to the right, when the training dataset size increases, the model's accuracy 
+   improves significantly from 0.695 at a training size of 600 to 0.95 at 5,000, which indicates a 
+   clear positive correlation between training size and test accuracy. This progression highlights 
+   the critical role of fine-tuning in model performance, with larger training datasets significantly 
+   enhancing the model’s code generation capabilities, underscoring the adaptability of pre-trained language models.
+
+</p>
+
+
+  <div class="row">
+    <!-- First image and caption -->
+    <div class="col-md-6 text-center">
+        {% include figure.html path="assets/img/text2latex/depth_acc.png" class="img-fluid" %}
+        <div class="caption">Performance variation with training set complexity. Illustrates model efficacy on test sets (tree depth 2) across varying complexities of training datasets, highlighting superior performance with increased complexity.</div>
+    </div>
+
+    <!-- Second image and caption -->
+    <div class="col-md-6 text-center">
+        {% include figure.html path="assets/img/text2latex/txtvsimage.png" class="img-fluid" %}
+        <div class="caption">Comparison of Text2LaTeX and Image2LaTeX model performance by varying training sizes. The model with augmented visual input exhibit consistently lower performance compared to that with text only inputs.</div>
+    </div>
+</div>
+
+<p>
+  <strong>Complexity boosts training effectiveness up to a point.</strong> 
+  We explored how training set depth affects model success. Models were trained on sets 
+  of 2500 samples and tested on a consistent set. As indicated by the figure to the left, 
+  accuracy topped at depth 3 (0.99) but dipped slightly at depth 4 (0.985), following an 
+  increase from depth 2 (0.885). This implies there is a point where adding complexity 
+  ceases to yield significant performance improvements. Pinpointing this balance is key 
+  to refining training and maximizing model results.
+</p>
+
+<p>
+  <strong>Additional visual information doesn't always enhance performance.</strong> Investigating 
+  if textual data alone suffices for LaTeX format comprehension, we compared Text2LaTeX 
+  and Image2LaTeX models. The key difference lies in Image2LaTeX's extra image input, 
+  transformed into visual tokens. Contrary to expectations, adding visual inputs led 
+  to a drop in accuracy, as shown by the figure to the left. This suggests visual 
+  data might actually distract from processing LaTeX expressions. While a Vision 
+  Transformer (ViT) breaks down image inputs into patches, language models seem 
+  to manage string inputs more effectively for complex LaTeX expressions.
+
+</p>
+
+</section>
+</body>
+</html>
