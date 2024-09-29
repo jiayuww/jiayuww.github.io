@@ -54,6 +54,14 @@ layout: default
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">publications</a></h2>
             {%- include selected_papers.html %}
           {%- endif %}
+
+          <!-- Personal section -->
+          {% if page.personal %}
+          <h2><a href="{{ '/personal/' | relative_url }}" style="color: inherit;">personal</a></h2>
+          <div class="personal-details">
+            {{ page.personal.details }}
+          </div>
+          {% endif %}
         </article>
 
 </div>
