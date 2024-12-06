@@ -5,4 +5,4 @@ inline: true
 related_posts: true
 ---
 
-Two papers are accepted to NeurIPS 2024! 🎉🎉
+Two first/co-first authored papers are accepted to NeurIPS 2024! 🎉🎉
