@@ -61,7 +61,7 @@
   type: time_table
   contents:
     - title: Research Assistant
-      institution: UW-Madison Programming Language Group
+      institution: UW-Madison Department of Computer Sciences
       year: Jan 2024 - Present
       # description:
       #   - Description 1.
@@ -73,9 +73,6 @@
     - title: Merger and Acquisition Intern
       institution: Business Development @ Genesis Medtech Group
       year: Apr 2022 - Aug 2022
-      # description:
-      #   - Description 1.
-      #   - Description 2.
     - title: Investment Intern
       institution: Post-Investment Management @ Alpha Startup Fund
       year: Jun 2021 - Sept 2021
