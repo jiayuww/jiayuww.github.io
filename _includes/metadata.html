@@ -126,6 +126,10 @@
         {%- capture link -%}https://twitter.com/{{ site.twitter_username }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}
     {%- endif -%}
+    {%- if site.bluesky_url -%}
+    {%- capture link -%}https://bsky.app/profile/{{ site.bluesky_url }}{%- endcapture -%}
+    {%- assign sameaslinks = sameaslinks | push: link -%}
+    {%- endif -%}
     {%- if site.mastodon_username -%}
         {%- capture link -%}https://{{ site.mastodon_username  }}{%- endcapture -%}
         {%- assign sameaslinks = sameaslinks | push: link -%}

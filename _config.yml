@@ -95,7 +95,7 @@ youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-
+bluesky_url: jiayuwang.bsky.social
 rss_icon: false
 
 # -----------------------------------------------------------------------------
@@ -377,8 +377,11 @@ bootstrap:
 bootstrap-table:
   version: "1.21.4"
 fontawesome:
-  version: "6.4.0"
+  version: "6.7.2"
   integrity: "sha256-HtsXJanqjKTc8vVQjO4YMhiqFoXkfBsjBWcX91T1jr8="
+# Add new Font Awesome Kit config
+font_awesome_kit: "b6a29bc49e.js"
+
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
