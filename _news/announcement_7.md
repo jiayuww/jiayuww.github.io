@@ -5,7 +5,7 @@ inline: true
 related_posts: true
 ---
 🚀 **SPARKLE** preprint is now live on [arXiv](https://arxiv.org/abs/2506.04723)! 
-Reinforcement learning has been key to boosting LLM reasoning—but *why* does it work so well? SPARKLE tackles this question with a fine-grained evaluation framework that dissects reasoning into plan-following, problem decomposition, and knowledge use.
+Reinforcement learning has driven impressive gains in LLM reasoning—but *what exactly* does RL improve? SPARKLE answers this question with a fine-grained evaluation framework that dissects reasoning into plan-following, problem decomposition, and knowledge use.
 
 The results are surprising: explicit plans can actually hurt on the hardest problems, yet RL-tuned models remain far more robust and flexible in handling them. We also find clear gains in how RL enhances knowledge integration.
 

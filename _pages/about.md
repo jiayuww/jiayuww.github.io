@@ -16,8 +16,8 @@ personal: false
 ---
 I am Jiayu (pronounciation: "Jee-ah-yü Wahng"), a PhD student in Computer Sciences at UW-Madison. I am fortunate to be advised by [Prof. Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/) and [Prof. Fred Sala](https://pages.cs.wisc.edu/~fredsala/). 
 
-I am passionate about building efficient and intelligent foundation models. My recent works focus on:
-- Data- and compute-efficient Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) (*e.g.,* LLM routing)
-- Logical and mathematical reasoning for LLMs and VLMs (*e.g.,* [grammar-aligned decoding](https://arxiv.org/abs/2405.21047), [spatial reasoning](https://arxiv.org/abs/2406.14852))
+I am passionate about **building efficient and intelligent agentic systems**. My recent works focus on:
+- Data- and compute-efficient Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) (*e.g.,* [cost-effective adaptation](https://arxiv.org/abs/2505.01449) via augmenting model routing with expanded adaptation strategy pool)
+- Logical and mathematical reasoning for LLMs and VLMs (*e.g.,* [dissecting reasoning under RL](https://arxiv.org/abs/2506.04723), [grammar-aligned decoding](https://arxiv.org/abs/2405.21047), [spatial reasoning](https://arxiv.org/abs/2406.14852))
 
 I'm always happy to discuss research, answer questions, or just chat! Feel free to reach out through my socials (see RHS →).
