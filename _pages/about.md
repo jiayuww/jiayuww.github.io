@@ -18,7 +18,7 @@ I am Jiayu (pronounciation: "Jee-ah-yü Wahng"), a PhD student in Computer Scien
 
 I am passionate about **building efficient and intelligent agentic systems**. My recent works focus on:
 - Data- and compute-efficient Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) (*e.g.,* [cost-effective adaptation](https://arxiv.org/abs/2505.01449) via augmenting model routing with expanded adaptation strategy pool)
-- Logical and mathematical reasoning for LLMs and VLMs (*e.g.,* [dissecting reasoning under RL](https://arxiv.org/abs/2506.04723), [grammar-aligned decoding](https://arxiv.org/abs/2405.21047), [spatial reasoning](https://arxiv.org/abs/2406.14852))
+- Reasoning for LLMs and VLMs (*e.g.,* [dissecting mathematical reasoning under RL](https://arxiv.org/abs/2506.04723), [grammar-aligned decoding (logical reasoning)](https://arxiv.org/abs/2405.21047), [spatial reasoning](https://arxiv.org/abs/2406.14852))
 
 I'm always happy to discuss research, answer questions, or just chat! Feel free to reach out through my socials (see RHS →).
 
