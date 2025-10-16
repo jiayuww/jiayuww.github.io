@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 personal: false
 ---
-I am Jiayu (pronounciation: "Jee-ah-yü Wahng"), a PhD student in Computer Sciences at UW-Madison. I am fortunate to be advised by [Prof. Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/) and [Prof. Fred Sala](https://pages.cs.wisc.edu/~fredsala/) ([Sprocket Lab](https://sprocketlab.github.io/)). 
+I am Jiayu (pronounciation: "Jee-ah-yü Wahng"), a fourth-year PhD candidate in Computer Sciences at UW-Madison. I am fortunate to be advised by [Prof. Aws Albarghouthi](https://pages.cs.wisc.edu/~aws/) and [Prof. Fred Sala](https://pages.cs.wisc.edu/~fredsala/) ([Sprocket Lab](https://sprocketlab.github.io/)). 
 
 I am passionate about **building efficient and intelligent agentic systems**. My recent works focus on:
 - Data- and compute-efficient Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) (*e.g.,* [cost-effective adaptation](https://arxiv.org/abs/2505.01449) via augmenting model routing with expanded adaptation strategy pool)
