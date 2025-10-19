@@ -36,7 +36,7 @@
         {% assign author_array_size = entry.author_array | size %}
 
         {% assign author_array_limit = author_array_size %}
-        {% assign max_author_limit = 8 %}
+        {% assign max_author_limit = 10 %}
         {%- if max_author_limit and author_array_size > max_author_limit %}
           {% assign author_array_limit = max_author_limit %}
         {% endif %}
