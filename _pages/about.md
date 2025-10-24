@@ -23,3 +23,5 @@ I am passionate about **building efficient and intelligent agentic systems**. My
 I'm always happy to discuss research, answer questions, or just chat! Feel free to reach out through my socials (see RHS →).
 
 Outside of research, I love playing tennis🎾 and try to get on the court as often as I can—usually 4–5 times a week.
+
+<span style="color:red;">I am currently on the 2025–2026 job market! Feel free to reach out if you think there might be a good fit!</span>
