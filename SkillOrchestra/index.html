@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillOrchestra — Interactive Demo</title>
+<link rel="stylesheet" href="style.css?v=20260322">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">SkillOrchestra</h1>
+    <p class="hero-subtitle">Learning to Route Agents via Skill Transfer</p>
+    <p class="hero-authors">Jiayu Wang, Yifei Ming, Zixuan Ke, Shafiq Joty, Aws Albarghouthi, Frederic Sala</p>
+    <p class="hero-affiliations">University of Wisconsin-Madison &middot; Salesforce AI Research</p>
+    <div class="hero-links">
+      <a href="https://arxiv.org/abs/2602.19672" target="_blank" class="hero-btn">Paper</a>
+      <a href="https://github.com/jiayuww/SkillOrchestra" target="_blank" class="hero-btn">Code</a>
+    </div>
+  </div>
+</header>
+
+<nav class="stepper" id="stepper">
+  <div class="stepper-inner">
+    <button class="step active" data-phase="0">
+      <span class="step-num">0</span>
+      <span class="step-label">Exploration</span>
+    </button>
+    <div class="step-connector"></div>
+    <button class="step" data-phase="1">
+      <span class="step-num">1</span>
+      <span class="step-label">Learning</span>
+    </button>
+    <div class="step-connector"></div>
+    <button class="step" data-phase="2">
+      <span class="step-num">2</span>
+      <span class="step-label">Selection</span>
+    </button>
+    <div class="step-connector"></div>
+    <button class="step" data-phase="3">
+      <span class="step-num">3</span>
+      <span class="step-label">Testing</span>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <!-- Phase 0: Exploration -->
+  <section class="phase active" id="phase-0">
+    <div class="phase-header">
+      <h2>Phase 0: Exploration</h2>
+      <p class="phase-desc">Run all 6 pool models on every training query to collect execution traces.</p>
+    </div>
+    <div class="stats-bar" id="exploration-stats"></div>
+    <div class="section-block">
+      <h3>Model Pool</h3>
+      <div id="model-pool" class="model-pool"></div>
+    </div>
+    <div class="section-block">
+      <h3>Exploration Traces <span class="hint">(click a row to expand)</span></h3>
+      <div id="exploration-table" class="trace-table"></div>
+    </div>
+  </section>
+
+  <!-- Phase 1: Learning -->
+  <section class="phase" id="phase-1">
+    <div class="phase-header">
+      <h2>Phase 1: Skill Handbook Learning</h2>
+      <p class="phase-desc">Discover skills from contrastive traces, profile agents, and refine the taxonomy.</p>
+    </div>
+    <div class="action-bar">
+      <button class="action-btn" id="btn-learn">Learn Handbook</button>
+      <span class="action-status" id="learn-status"></span>
+    </div>
+    <div id="learning-log" class="learning-log"></div>
+    <div id="handbook-display" class="handbook-display" style="display:none">
+      <div class="handbook-grid">
+        <div class="handbook-col">
+          <h3>Mode Insights</h3>
+          <div id="mode-insights"></div>
+        </div>
+        <div class="handbook-col wide">
+          <h3>Skill Taxonomy <span class="badge" id="skill-count"></span></h3>
+          <div id="skill-tree"></div>
+        </div>
+      </div>
+      <div class="section-block">
+        <h3>Agent Competence Heatmap</h3>
+        <div id="heatmap-container" class="heatmap-container"></div>
+        <div id="agent-detail" class="agent-detail" style="display:none"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 2: Selection -->
+  <section class="phase" id="phase-2">
+    <div class="phase-header">
+      <h2>Phase 2: Pareto-Optimal Handbook Selection</h2>
+      <p class="phase-desc">Evaluate candidate handbooks at different granularities and select the Pareto-optimal one on the validation set.</p>
+    </div>
+    <div class="action-bar">
+      <button class="action-btn" id="btn-select">Run Pareto Selection</button>
+      <span class="action-status" id="select-status"></span>
+    </div>
+    <div id="selection-content" style="display:none">
+      <div id="candidate-cards" class="candidate-cards"></div>
+      <div class="chart-container">
+        <h3>Accuracy vs. Cost vs. Latency</h3>
+        <div id="pareto-chart" class="pareto-chart"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Phase 3: Testing -->
+  <section class="phase" id="phase-3">
+    <div class="phase-header">
+      <h2>Phase 3: Testing</h2>
+      <p class="phase-desc">Deploy the selected handbook and evaluate on 500 held-out NQ test queries.</p>
+    </div>
+    <div class="section-block">
+      <h3>Routing Trace Examples</h3>
+      <p class="hint">Curated examples showing skill-aware routing in action.</p>
+      <div id="test-examples"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>SkillOrchestra Interactive Demo &middot; NQ Benchmark &middot; <a href="https://arxiv.org/abs/2602.19672">arXiv:2602.19672</a></p>
+</footer>
+
+<script src="app.js?v=20260322"></script>
+</body>
+</html>
