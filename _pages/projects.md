@@ -3,8 +3,15 @@ layout: page
 title: projects
 permalink: /projects/
 description: A growing collection of your cool projects.
-nav: false
+nav: true
 nav_order: 2
+dropdown: true
+children:
+  - title: all projects
+    permalink: /projects/
+  - title: divider
+  - title: SkillOrchestra
+    permalink: /projects/7_project/
 display_categories: [work, fun]
 horizontal: false
 ---
