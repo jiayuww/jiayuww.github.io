@@ -580,7 +580,40 @@ main { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1.5rem 3rem; }
   margin-bottom: 0.6rem;
   font-family: 'JetBrains Mono', monospace;
 }
-.agent-meta { display: flex; gap: 1.5rem; margin-bottom: 0.8rem; font-size: 0.82rem; color: #666; }
+.agent-meta { display: flex; gap: 1.5rem; margin-bottom: 0.8rem; font-size: 0.82rem; color: #666; flex-wrap: wrap; }
+.agent-routing-signals {
+  margin-bottom: 1rem;
+  padding: 0.85rem 1rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  border-left: 4px solid #6366f1;
+}
+.agent-routing-signals h5 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #334155;
+}
+.agent-signal-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.agent-signal-list li {
+  font-size: 0.78rem;
+  color: #475569;
+  line-height: 1.45;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+.agent-signal-list li:last-child { border-bottom: none; }
+.agent-empty {
+  font-size: 0.78rem;
+  color: #94a3b8;
+  margin: 0;
+  font-style: italic;
+}
 .agent-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 @media (max-width: 600px) { .agent-lists { grid-template-columns: 1fr; } }
 .agent-lists h5 { font-size: 0.82rem; font-weight: 600; margin-bottom: 0.4rem; }
