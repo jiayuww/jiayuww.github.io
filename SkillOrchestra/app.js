@@ -305,7 +305,22 @@ function showAgentDetail(agentId) {
   const profile = DATA.handbook.agent_profiles[agentId];
   const el = document.getElementById('agent-detail');
   el.style.display = 'block';
-  const cost = profile.cost_stats;
+  const cost = profile.cost_stats || {};
+  const signals = profile.routing_signals || [];
+  const strengths = profile.strengths || [];
+  const weaknesses = profile.weaknesses || [];
+  const signalsBlock = signals.length
+    ? `<div class="agent-routing-panel">
+        <h5>Routing insights</h5>
+        <ul class="agent-routing-list">${signals.map(s => `<li>${escHtml(s)}</li>`).join('')}</ul>
+      </div>`
+    : '';
+  const strengthsList = strengths.length
+    ? `<ul>${strengths.slice(0, 12).map(s => `<li><span class="strength-icon"></span>${escHtml(s)}</li>`).join('')}</ul>`
+    : '<p class="agent-empty">No distilled strengths in handbook data.</p>';
+  const weaknessesList = weaknesses.length
+    ? `<ul>${weaknesses.slice(0, 12).map(w => `<li><span class="weakness-icon"></span>${escHtml(w)}</li>`).join('')}</ul>`
+    : '<p class="agent-empty">No distilled weaknesses in handbook data.</p>';
   el.innerHTML = `
     <h4 style="color:${MODEL_COLORS[agentId] || '#333'}">${agentId}</h4>
     <div class="agent-meta">
@@ -313,14 +328,15 @@ function showAgentDetail(agentId) {
       <span>Avg Cost: <strong>$${cost.avg_cost_usd?.toFixed(6) || '—'}</strong></span>
       <span>Avg Tokens: <strong>${Math.round(cost.avg_prompt_tokens || 0)} in / ${Math.round(cost.avg_completion_tokens || 0)} out</strong></span>
     </div>
+    ${signalsBlock}
     <div class="agent-lists">
       <div>
         <h5>Strengths</h5>
-        <ul>${profile.strengths.slice(0, 6).map(s => `<li><span class="strength-icon"></span>${escHtml(s)}</li>`).join('')}</ul>
+        ${strengthsList}
       </div>
       <div>
         <h5>Weaknesses</h5>
-        <ul>${profile.weaknesses.slice(0, 6).map(w => `<li><span class="weakness-icon"></span>${escHtml(w)}</li>`).join('')}</ul>
+        ${weaknessesList}
       </div>
     </div>`;
   el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
