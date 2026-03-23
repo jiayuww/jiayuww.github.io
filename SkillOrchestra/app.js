@@ -310,9 +310,9 @@ function showAgentDetail(agentId) {
   const strengths = profile.strengths || [];
   const weaknesses = profile.weaknesses || [];
   const signalsBlock = signals.length
-    ? `<div class="agent-routing-insights">
+    ? `<div class="agent-routing-panel">
         <h5>Routing insights</h5>
-        <ul class="agent-routing-insight-list">${signals.map(s => `<li>${escHtml(s)}</li>`).join('')}</ul>
+        <ul class="agent-routing-list">${signals.map(s => `<li>${escHtml(s)}</li>`).join('')}</ul>
       </div>`
     : '';
   const strengthsList = strengths.length
