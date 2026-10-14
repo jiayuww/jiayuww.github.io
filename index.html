@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jiayu (Mila) Wang</title>
+  <meta name="description" content="Jiayu (Mila) Wang — Senior Research Scientist at Salesforce AI Research, building efficient and intelligent agentic systems.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Apply saved/system theme before paint to avoid a flash.
+    if (localStorage.theme === "dark" || (!localStorage.theme && matchMedia("(prefers-color-scheme: dark)").matches))
+      document.documentElement.classList.add("dark");
+  </script>
+</head>
+<body>
+  <!-- Pinned top bar: name stays visible while scrolling -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">
+        <img class="brand-avatar" src="images/photo.jpg" alt="">
+        <span>Jiayu (Mila) Wang</span>
+      </a>
+      <nav class="menu">
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#misc">Misc</a>
+        <button id="theme-toggle" aria-label="Toggle dark mode">◐</button>
+      </nav>
+    </div>
+  </header>
+
+<div class="page" id="top">
+
+  <!-- ===== Intro ===== -->
+  <section class="intro" id="about">
+    <div class="intro-text">
+      <h1>Jiayu (Mila) Wang</h1>
+      <p class="role"><strong>Senior Research Scientist</strong> · Salesforce AI Research</p>
+      <div class="links">
+        <a class="icon" href="#contact" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="icon" href="https://scholar.google.com/citations?user=e4S1NrEAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a class="icon" href="https://github.com/jiayuww" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="icon" href="https://twitter.com/jiayuwang111" title="X / Twitter" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a class="icon" href="https://bsky.app/profile/jiayuwang.bsky.social" title="Bluesky" aria-label="Bluesky"><i class="fa-brands fa-bluesky"></i></a>
+        <a class="icon" href="https://www.linkedin.com/in/jiayu-mila-wang" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+      <div class="bio">
+      <p>I'm Jiayu (pronounced “Jee-ah-yü Wahng”), a Senior Research Scientist at <a href="https://www.salesforceairesearch.com/">Salesforce AI Research</a>. I'm passionate about building <strong>efficient and intelligent agentic systems</strong>. Before Salesforce, I did my PhD in Computer Sciences at UW-Madison, advised by <a href="https://pages.cs.wisc.edu/~aws/">Prof. Aws Albarghouthi</a> and <a href="https://pages.cs.wisc.edu/~fredsala/">Prof. Fred Sala</a> (<a href="https://sprocketlab.github.io/">Sprocket Lab</a>).</p>
+      <p>My recent work focuses on:</p>
+      <ul>
+        <li><strong>Data- and compute-efficient adaptation</strong> of LLMs and multimodal LLMs — e.g., <a href="https://arxiv.org/abs/2602.19672">skill-aware agent routing</a> and <a href="https://arxiv.org/abs/2505.01449">predicting the cost and performance of adaptation strategies</a>.</li>
+        <li><strong>Reasoning in agentic systems</strong> — e.g., <a href="https://arxiv.org/abs/2510.14240">deep research</a>, <a href="https://arxiv.org/abs/2506.04723">dissecting mathematical reasoning under RL</a>, <a href="https://arxiv.org/abs/2405.21047">grammar-aligned decoding</a>, and <a href="https://arxiv.org/abs/2406.14852">spatial reasoning</a>.</li>
+      </ul>
+      <p id="contact">I'm always happy to discuss research, answer questions, or just chat! The best way to reach me is to <a href="https://github.com/jiayuww/jiayuww.github.io/issues/new">open a GitHub issue</a>, send an email — <a href="mailto:jiayuwang@salesforce.com">jiayuwang@salesforce.com</a> for work-related topics or <a href="mailto:milawang0223@gmail.com">milawang0223@gmail.com</a> for personal ones — or message me on <a href="https://www.linkedin.com/in/jiayu-mila-wang">LinkedIn</a>.</p>
+      </div>
+    </div>
+    <img class="avatar" id="avatar" src="images/photo.jpg" alt="Jiayu (Mila) Wang">
+  </section>
+
+  <!-- ===== News ===== -->
+  <section id="news">
+    <div class="sec-head"><h2>News</h2></div>
+    <ul class="news">
+      <li><span class="date">Oct 2026</span><span>Joined <strong>Salesforce AI Research</strong> as a Senior Research Scientist! 🚀</span></li>
+      <li><span class="date">Sep 2026</span><span><a href="https://arxiv.org/abs/2602.19672">SkillOrchestra</a> is accepted to <strong>NeurIPS 2026</strong>. 🎉</span></li>
+      <li><span class="date">Sep 2026</span><span>New preprint: <a href="https://arxiv.org/abs/2609.04280">EvoHarnessBench</a> — can your agents keep pace as their tools, skills, and specialist agents evolve?</span></li>
+      <li><span class="date">Aug 2026</span><span>Deposited my thesis, <a href="https://www.proquest.com/openview/dd4b874afb167007d1974b633fda18d3/1?pq-origsite=gscholar&amp;cbl=18750&amp;diss=y"><em>Towards Efficient and Intelligent Foundation Models and Agentic Systems</em></a>, and received my <strong>CS PhD from UW-Madison</strong>! 🎓</span></li>
+      <li><span class="date">Feb 2026</span><span><a href="https://arxiv.org/abs/2602.19672">SkillOrchestra</a> is on arXiv — skill-aware agent orchestration that learns fine-grained skills from execution experience, cutting learning costs by 700× vs. Router-R1 and 300× vs. ToolOrchestra while improving performance by up to 27.5%. Try the <a href="https://jiayuww.github.io/SkillOrchestra/">interactive demo</a>!</span></li>
+      <li><span class="date">Jan 2026</span><span><a href="https://livedeepresearch.github.io/">LiveResearchBench</a>, a live benchmark for user-centric deep research, is accepted to <strong>ICLR 2026</strong>. 🎉</span></li>
+      <li><span class="date">Sep 2025</span><span><a href="https://sparkle-reasoning.github.io/">SPARKLE</a> is accepted to <strong>NeurIPS 2025</strong>. 🎉</span></li>
+      <li><span class="date">Jun 2025</span><span><a href="https://arxiv.org/abs/2506.04723">SPARKLE</a> preprint is out — what exactly does RL improve in LLM reasoning? A fine-grained look at plan-following, problem decomposition, and knowledge use.</span></li>
+      <li><span class="date">Apr 2025</span><span><a href="https://arxiv.org/abs/2505.01449">COSMOS</a> preprint is out — predicting the performance and cost of LLM adaptation strategies, so you don't burn GPU hours testing every option.</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== Publications =====
+       To add a paper: copy an <article class="row pub"> block.
+       data-tags is a comma-separated list; tag chips and the filter bar are built from it automatically.
+       data-selected puts the paper in the default "Selected" view. -->
+  <section id="publications">
+    <div class="sec-head">
+      <h2>Publications</h2>
+      <div class="view-switch" role="group" aria-label="Show publications">
+        <button data-view="selected">Selected</button><button data-view="all">All</button>
+      </div>
+    </div>
+    <div class="filter" id="tag-filter"><span class="label">Filter</span></div>
+
+    <article class="row pub" data-tags="Agents, Benchmarks">
+      <!-- No figure: arXiv tile. To add one, replace with <div class="thumb"><img src="images/..." alt=""></div> -->
+      <a class="thumb arxiv" href="https://arxiv.org/abs/2609.04280" aria-label="arXiv 2609.04280"><span>arXiv</span><small>2609.04280</small></a>
+      <div>
+        <h3>EvoHarnessBench: Can Your Agents Keep Pace with an Evolving Harness?<span class="flag">New</span></h3>
+        <div class="authors">Zixuan Ke, Vaidehi Patil, Haizhou Shi, Yang Li, Ye Liu, Sarath Shekkizhar, Anurag Koul, <span class="me">Jiayu Wang</span>, Xuan-Phi Nguyen, Semih Yavuz, Mohit Bansal, Shafiq Joty</div>
+        <p class="tldr">A benchmark for agents whose tools, skills, and specialist agents keep changing — showing that harness expansion alone can make agents forget tasks they used to solve.</p>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2609.04280">Paper</a></div>
+      </div>
+      <div class="venue">2026</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Agents, Orchestration, Efficiency">
+      <div class="thumb"><img src="images/router_perf.png" alt="SkillOrchestra results"></div>
+      <div>
+        <h3>SkillOrchestra: Learning to Route Agents via Skill Transfer</h3>
+        <div class="authors"><span class="me">Jiayu Wang</span>, Yifei Ming, Zixuan Ke, Shafiq Joty, Aws Albarghouthi, Frederic Sala</div>
+        <p class="tldr">Learns transferable skills and per-model competence profiles to route compound AI systems — 700× cheaper to learn than Router-R1.</p>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2602.19672">Paper</a><a href="https://github.com/jiayuww/SkillOrchestra">Code</a><a href="https://jiayuww.github.io/SkillOrchestra/">Demo</a></div>
+      </div>
+      <div class="venue"><em>NeurIPS</em>, 2026</div>
+    </article>
+
+    <article class="row pub" data-tags="Agents, Orchestration, Reasoning, Benchmarks">
+      <div class="thumb"><img src="images/masorch.png" alt="MAS-Orchestra overview"></div>
+      <div>
+        <h3>MAS-Orchestra: Understanding and Improving Multi-Agent Reasoning Through Holistic Orchestration and Controlled Benchmarks</h3>
+        <div class="authors">Zixuan Ke, Yifei Ming, Austin Xu, Ryan Chin, Xuan-Phi Nguyen, Prathyusha Jwalapuram, <span class="me">Jiayu Wang</span>, Semih Yavuz, Caiming Xiong, Shafiq Joty</div>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2601.14652">Paper</a></div>
+      </div>
+      <div class="venue"><em>ICML</em>, 2026</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Agents, Deep Research, Benchmarks">
+      <div class="thumb"><img src="images/lrb.png" alt="LiveResearchBench overview"></div>
+      <div>
+        <h3>LiveResearchBench: A Live Benchmark for User-Centric Deep Research in the Wild</h3>
+        <div class="authors"><span class="me">Jiayu Wang*</span>, Yifei Ming*, Riya Dulepet, Qinglin Chen, Austin Xu, Zixuan Ke, Frederic Sala, Aws Albarghouthi, Caiming Xiong, Shafiq Joty</div>
+        <p class="tldr">A live benchmark for deep research, with an evaluation suite that closely aligns with human judgment across six dimensions.</p>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2510.14240">Paper</a><a href="https://github.com/SalesforceAIResearch/LiveResearchBench">Code</a><a href="https://livedeepresearch.github.io/">Project</a><a href="https://huggingface.co/datasets/Salesforce/LiveResearchBench">Dataset</a></div>
+      </div>
+      <div class="venue"><em>ICLR</em>, 2026</div>
+    </article>
+
+    <article class="row pub" data-tags="Agents, Deep Research">
+      <!-- No figure: arXiv tile. To add one, replace with <div class="thumb"><img src="images/..." alt=""></div> -->
+      <a class="thumb arxiv" href="https://arxiv.org/abs/2510.13913" aria-label="arXiv 2510.13913"><span>arXiv</span><small>2510.13913</small></a>
+      <div>
+        <h3>Synthesizing Agentic Data for Web Agents with Progressive Difficulty Enhancement Mechanisms</h3>
+        <div class="authors">Shrey Pandit, Xuan-Phi Nguyen, Yifei Ming, Austin Xu, <span class="me">Jiayu Wang</span>, Caiming Xiong, Shafiq Joty</div>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2510.13913">Paper</a></div>
+      </div>
+      <div class="venue">2025</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Reasoning, RL">
+      <div class="thumb"><img src="images/spk.png" alt="SPARKLE overview"></div>
+      <div>
+        <h3>Beyond Accuracy: Dissecting Mathematical Reasoning for LLMs Under Reinforcement Learning</h3>
+        <div class="authors"><span class="me">Jiayu Wang</span>, Yifei Ming, Zixuan Ke, Caiming Xiong, Shafiq Joty, Aws Albarghouthi, Frederic Sala</div>
+        <p class="tldr">SPARKLE: what exactly does RL improve? Dissects reasoning into plan-following, problem decomposition, and knowledge use — and shows how to turn hard problems into training signal.</p>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2506.04723">Paper</a><a href="https://github.com/sparkle-reasoning/sparkle">Code</a><a href="https://sparkle-reasoning.github.io/">Project</a><a href="https://huggingface.co/sparkle-reasoning/datasets">Dataset</a><a href="https://huggingface.co/sparkle-reasoning/models">Checkpoints</a></div>
+      </div>
+      <div class="venue"><em>NeurIPS</em>, 2025</div>
+    </article>
+
+    <article class="row pub" data-tags="Agents, Robustness">
+      <div class="thumb"><img src="images/wafer.png" alt="Helpful Agent Meets Deceptive Judge overview"></div>
+      <div>
+        <h3>Helpful Agent Meets Deceptive Judge: Understanding Vulnerabilities in Agentic Workflows</h3>
+        <div class="authors">Yifei Ming, Zixuan Ke, Xuan-Phi Nguyen, <span class="me">Jiayu Wang</span>, Shafiq Joty</div>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2506.03332">Paper</a></div>
+      </div>
+      <div class="venue">2025</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Efficiency">
+      <div class="thumb"><img src="images/cosmos.png" alt="COSMOS overview"></div>
+      <div>
+        <h3>COSMOS: Predictable and Cost-Effective Adaptation of LLMs</h3>
+        <div class="authors"><span class="me">Jiayu Wang</span>, Aws Albarghouthi, Frederic Sala</div>
+        <p class="tldr">Accurately and efficiently predicts the performance and cost of training- and test-time adaptation strategies — smarter choices, fewer experiments.</p>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2505.01449">Paper</a></div>
+      </div>
+      <div class="venue">2025</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Reasoning, Multimodal, Benchmarks">
+      <div class="thumb"><img src="images/spatialeval.png" alt="SpatialEval overview"></div>
+      <div>
+        <h3>Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models</h3>
+        <div class="authors"><span class="me">Jiayu Wang</span>, Yifei Ming, Zhenmei Shi, Vibhav Vineet, Xin Wang, Yixuan Li, Neel Joshi</div>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2406.14852">Paper</a><a href="https://github.com/jiayuww/SpatialEval">Code</a><a href="https://spatialeval.github.io/">Project</a><a href="assets/spatialEval_poster.pdf">Poster</a><a href="https://neurips.cc/virtual/2024/poster/94371">Talk</a></div>
+      </div>
+      <div class="venue"><em>NeurIPS</em>, 2024</div>
+    </article>
+
+    <article class="row pub" data-selected data-tags="Reasoning, Decoding">
+      <div class="thumb"><img src="images/gad.png" alt="Grammar-Aligned Decoding overview"></div>
+      <div>
+        <h3>Grammar-Aligned Decoding</h3>
+        <div class="authors">Kanghee Park*, <span class="me">Jiayu Wang*</span>, Taylor Berg-Kirkpatrick, Nadia Polikarpova, Loris D'Antoni</div>
+        <div class="tags"></div>
+        <div class="mlinks"><a href="https://arxiv.org/abs/2405.21047">Paper</a><a href="https://github.com/ebmoon/transformers-GAD">Code</a><a href="https://neurips.cc/virtual/2024/poster/96599">Talk</a></div>
+      </div>
+      <div class="venue"><em>NeurIPS</em>, 2024</div>
+    </article>
+
+    <p class="empty" id="pub-empty" hidden>No papers match the selected tags.</p>
+    <p class="note">* equal contribution</p>
+  </section>
+
+  <!-- ===== Misc ===== -->
+  <section id="misc">
+    <div class="sec-head"><h2>Misc</h2></div>
+    <div class="misc">
+      <p>Outside of research, I love playing tennis 🎾 and try to get on the court as often as I can — usually 4–5 times a week.</p>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    © <span id="year">2026</span> Jiayu (Mila) Wang · Last updated <span id="updated"></span>
+  </footer>
+</div>
+
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", () => {
+    const dark = document.documentElement.classList.toggle("dark");
+    localStorage.theme = dark ? "dark" : "light";
+  });
+
+  // Top bar: fade in the small photo once the big one has scrolled out of view.
+  const topbar = document.getElementById("topbar");
+  new IntersectionObserver(([e]) => topbar.classList.toggle("show-avatar", !e.isIntersecting),
+    { rootMargin: "-64px 0px 0px 0px" }).observe(document.getElementById("avatar"));
+
+  // Menu: underline the section currently being read.
+  const menuLinks = [...document.querySelectorAll(".menu a")];
+  const sectionObserver = new IntersectionObserver(entries => entries.forEach(e => {
+    if (e.isIntersecting) menuLinks.forEach(a => a.classList.toggle("active", a.hash === "#" + e.target.id));
+  }), { rootMargin: "-45% 0px -50% 0px" });
+  menuLinks.forEach(a => sectionObserver.observe(document.querySelector(a.hash)));
+
+  // News: fade the bottom edge until the list is scrolled to the end.
+  const news = document.querySelector(".news");
+  const updateNewsFade = () =>
+    news.classList.toggle("has-more", news.scrollTop + news.clientHeight < news.scrollHeight - 4);
+  news.addEventListener("scroll", updateNewsFade, { passive: true });
+  updateNewsFade();
+
+  // Footer: year and last-updated date come from the page's modified time (on GitHub Pages, the last deploy).
+  const modified = new Date(document.lastModified);
+  document.getElementById("year").textContent = modified.getFullYear();
+  document.getElementById("updated").textContent =
+    modified.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+
+  // ----- Publications: Selected/All view + tag filtering -----
+  // Selecting tags shows papers that have ANY selected tag. State lives in ?view=all&tags=... so it is shareable.
+  const pubs = [...document.querySelectorAll(".pub")];
+  const tagsOf = el => el.dataset.tags.split(",").map(t => t.trim()).filter(Boolean);
+  const params = new URLSearchParams(location.search);
+  let view = params.get("view") === "all" ? "all" : "selected";
+  const active = new Set((params.get("tags") || "").split(",").filter(Boolean));
+  const filterBar = document.getElementById("tag-filter");
+
+  const makeTag = (name, label = name) => {
+    const b = document.createElement("button");
+    b.className = "tag";
+    b.dataset.tag = name;
+    b.innerHTML = label;
+    b.addEventListener("click", () => toggle(name));
+    return b;
+  };
+  pubs.forEach(p => tagsOf(p).forEach(t => p.querySelector(".tags").append(makeTag(t))));
+
+  document.querySelectorAll(".view-switch button").forEach(b =>
+    b.addEventListener("click", () => { view = b.dataset.view; render(); }));
+
+  function toggle(name) {
+    if (!name) active.clear();
+    else active.has(name) ? active.delete(name) : active.add(name);
+    render();
+  }
+
+  // Rebuild the filter bar from the papers in the current view, so counts match what's shown.
+  function renderFilterBar(inView) {
+    const counts = new Map();
+    inView.forEach(p => tagsOf(p).forEach(t => counts.set(t, (counts.get(t) || 0) + 1)));
+    [...active].forEach(t => counts.has(t) || active.delete(t));
+    const tags = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
+    filterBar.querySelectorAll(".tag").forEach(b => b.remove());
+    filterBar.append(makeTag("", "All"));
+    tags.forEach(t => filterBar.append(makeTag(t, `${t}<sup>${counts.get(t)}</sup>`)));
+  }
+
+  function render() {
+    const inView = pubs.filter(p => view === "all" || p.hasAttribute("data-selected"));
+    renderFilterBar(inView);
+    let shown = 0;
+    pubs.forEach(p => {
+      const match = inView.includes(p) && (active.size === 0 || tagsOf(p).some(t => active.has(t)));
+      p.hidden = !match;
+      if (match) shown++;
+    });
+    document.querySelectorAll(".tag").forEach(b => {
+      b.classList.toggle("active", b.dataset.tag ? active.has(b.dataset.tag) : active.size === 0);
+    });
+    document.querySelectorAll(".view-switch button").forEach(b =>
+      b.classList.toggle("active", b.dataset.view === view));
+    document.getElementById("pub-empty").hidden = shown > 0;
+    const url = new URL(location);
+    view === "all" ? url.searchParams.set("view", "all") : url.searchParams.delete("view");
+    active.size ? url.searchParams.set("tags", [...active].join(",")) : url.searchParams.delete("tags");
+    history.replaceState(null, "", url);
+  }
+  render();
+</script>
+</body>
+</html>
