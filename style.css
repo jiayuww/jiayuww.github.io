@@ -77,6 +77,8 @@ img { display: block; max-width: 100%; }
 .intro h1 { margin: 0; font-size: 42px; line-height: 1.15; font-weight: 700; letter-spacing: -.01em; }
 .role { margin: 6px 0 0; font-size: 17px; color: var(--text-secondary); }
 .role strong { color: var(--text); }
+.contact-line { margin: 8px 0 0; font-size: 14.5px; color: var(--text-secondary); }
+.contact-line .sep { color: var(--text-muted); margin: 0 4px; }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 0; }
 .links a.icon {
   display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%;
@@ -135,7 +137,11 @@ section.intro { margin-top: 0; }
 }
 .tag:hover { background: var(--accent-soft); color: var(--accent); }
 .tag.active { background: var(--accent); color: #fff; }
-.tag sup { font-size: 9px; margin-left: 3px; opacity: .7; }
+/* Theme chips (Efficient / Intelligent / Reliable) read as the primary level */
+.tag.theme { font-weight: 700; color: var(--accent); background: var(--accent-soft); }
+.tag.theme.active { background: var(--accent); color: #fff; }
+.filter.topics { padding-top: 0; }
+.filter.topics .tag { font-size: 12px; padding: 4px 10px; }
 
 /* Paper rows: figure left; venue label above title */
 .row {

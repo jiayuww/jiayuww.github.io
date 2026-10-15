@@ -41,8 +41,9 @@
     <div class="intro-text">
       <h1>Jiayu (Mila) Wang</h1>
       <p class="role"><strong>Research Scientist</strong> · Salesforce AI Research</p>
+      <p class="contact-line" id="email">Work: <a href="mailto:jiayuwang@salesforce.com">jiayuwang@salesforce.com</a> <span class="sep">/</span> Personal: <a href="mailto:milawang0223@gmail.com">milawang0223@gmail.com</a></p>
       <div class="links">
-        <a class="icon" href="#contact" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a class="icon" href="#email" title="Email" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         <a class="icon" href="https://scholar.google.com/citations?user=e4S1NrEAAAAJ" title="Google Scholar" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
         <a class="icon" href="https://github.com/jiayuww" title="GitHub" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
         <a class="icon" href="https://twitter.com/jiayuwang111" title="X / Twitter" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
@@ -50,9 +51,9 @@
         <a class="icon" href="https://www.linkedin.com/in/jiayu-mila-wang" title="LinkedIn" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
       <div class="bio">
-      <p>I'm a Research Scientist at <a href="https://www.salesforceairesearch.com/">Salesforce AI Research</a>, where I work on frontier AI research and turn it into real business impact. My current focus is <strong>agentic systems</strong>: making them <strong>efficient</strong> to run, <strong>intelligent</strong> enough to handle complex real-world work, and <strong>reliable</strong> enough for people to trust. For example, <a href="https://arxiv.org/abs/2602.19672">SkillOrchestra</a>, my work on skill-based agent orchestration, went from paper to production at Salesforce.</p>
+      <p>I'm a Research Scientist at <a href="https://www.salesforceairesearch.com/">Salesforce AI Research</a>, where I work on frontier AI research and turn it into real business impact. My current focus is <strong>agentic systems</strong>: making them <strong>efficient</strong> to run, <strong>intelligent</strong> enough to handle complex real-world work, and <strong>reliable</strong> enough for people to trust. Most recently, I took <a href="https://arxiv.org/abs/2602.19672">SkillOrchestra</a>, my work on skill-based agent orchestration, from paper to production at Salesforce.</p>
       <p>I earned my PhD in Computer Science from UW-Madison, advised by <a href="https://pages.cs.wisc.edu/~aws/">Prof. Aws Albarghouthi</a> and <a href="https://pages.cs.wisc.edu/~fredsala/">Prof. Fred Sala</a>. Before my PhD, I also spent time in the financial industry (investment banking and venture capital).</p>
-      <p id="contact">I'm open to collaborating and discussing research, or just chatting! The best way to reach me is to <a href="https://github.com/jiayuww/jiayuww.github.io/issues/new">open a GitHub issue</a>, send me an email (<a href="mailto:jiayuwang@salesforce.com">work</a> / <a href="mailto:milawang0223@gmail.com">personal</a>), or DM me on <a href="https://www.linkedin.com/in/jiayu-mila-wang">LinkedIn</a>.</p>
+      <p id="contact">I'm open to collaborating and discussing research, or just chatting! The best way to reach me is to open a GitHub issue, send me an email, or DM me on <a href="https://www.linkedin.com/in/jiayu-mila-wang">LinkedIn</a>.</p>
       </div>
     </div>
     <img class="avatar" id="avatar" src="images/photo.jpg" alt="Jiayu (Mila) Wang">
@@ -76,7 +77,8 @@
 
   <!-- ===== Publications =====
        To add a paper: copy an <article class="row pub"> block.
-       data-tags is a comma-separated list; tag chips and the filter bar are built from it automatically.
+       data-theme is one of Efficient / Intelligent / Reliable (the top filter row).
+       data-tags is a comma-separated list of topics; tag chips and the topic row are built from it automatically.
        data-selected puts the paper in the default "Selected" view. -->
   <section id="publications">
     <div class="sec-head">
@@ -85,9 +87,10 @@
         <button data-view="selected">Selected</button><button data-view="all">All</button>
       </div>
     </div>
-    <div class="filter" id="tag-filter"><span class="label">Filter</span></div>
+    <div class="filter" id="theme-filter"></div>
+    <div class="filter topics" id="tag-filter"></div>
 
-    <article class="row pub" data-tags="Agents, Benchmarks">
+    <article class="row pub" data-theme="Reliable" data-tags="Skills & Harness, Self-Evolving Agents, Evaluation & Benchmarks">
       <!-- No figure: arXiv tile. To add one, replace with <div class="thumb"><img src="images/..." alt=""></div> -->
       <a class="thumb arxiv" href="https://arxiv.org/abs/2609.04280" aria-label="arXiv 2609.04280"><span>arXiv</span><small>2609.04280</small></a>
       <div>
@@ -100,7 +103,7 @@
       <div class="venue">2026</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Agents, Orchestration, Efficiency">
+    <article class="row pub" data-selected data-theme="Efficient" data-tags="Agent Orchestration, Skills & Harness">
       <div class="thumb"><img src="images/router_perf.png" alt="SkillOrchestra results"></div>
       <div>
         <h3>SkillOrchestra: Learning to Route Agents via Skill Transfer</h3>
@@ -112,7 +115,7 @@
       <div class="venue"><em>NeurIPS</em>, 2026</div>
     </article>
 
-    <article class="row pub" data-tags="Agents, Orchestration, Reasoning, Benchmarks">
+    <article class="row pub" data-theme="Efficient" data-tags="Agent Orchestration, Multi-Agent Systems, Evaluation & Benchmarks">
       <div class="thumb"><img src="images/masorch.png" alt="MAS-Orchestra overview"></div>
       <div>
         <h3>MAS-Orchestra: Understanding and Improving Multi-Agent Reasoning Through Holistic Orchestration and Controlled Benchmarks</h3>
@@ -123,7 +126,7 @@
       <div class="venue"><em>ICML</em>, 2026</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Agents, Deep Research, Benchmarks">
+    <article class="row pub" data-selected data-theme="Reliable" data-tags="Deep Research, Evaluation & Benchmarks">
       <div class="thumb"><img src="images/lrb.png" alt="LiveResearchBench overview"></div>
       <div>
         <h3>LiveResearchBench: A Live Benchmark for User-Centric Deep Research in the Wild</h3>
@@ -135,7 +138,7 @@
       <div class="venue"><em>ICLR</em>, 2026</div>
     </article>
 
-    <article class="row pub" data-tags="Agents, Deep Research">
+    <article class="row pub" data-theme="Intelligent" data-tags="Web Agents, Synthetic Data">
       <!-- No figure: arXiv tile. To add one, replace with <div class="thumb"><img src="images/..." alt=""></div> -->
       <a class="thumb arxiv" href="https://arxiv.org/abs/2510.13913" aria-label="arXiv 2510.13913"><span>arXiv</span><small>2510.13913</small></a>
       <div>
@@ -147,7 +150,7 @@
       <div class="venue">2025</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Reasoning, RL">
+    <article class="row pub" data-selected data-theme="Intelligent" data-tags="Reasoning, Mid/Post-Training">
       <div class="thumb"><img src="images/spk.png" alt="SPARKLE overview"></div>
       <div>
         <h3>Beyond Accuracy: Dissecting Mathematical Reasoning for LLMs Under Reinforcement Learning</h3>
@@ -159,7 +162,7 @@
       <div class="venue"><em>NeurIPS</em>, 2025</div>
     </article>
 
-    <article class="row pub" data-tags="Agents, Robustness">
+    <article class="row pub" data-theme="Reliable" data-tags="Safety & Robustness, Multi-Agent Systems">
       <div class="thumb"><img src="images/wafer.png" alt="Helpful Agent Meets Deceptive Judge overview"></div>
       <div>
         <h3>Helpful Agent Meets Deceptive Judge: Understanding Vulnerabilities in Agentic Workflows</h3>
@@ -170,7 +173,7 @@
       <div class="venue">2025</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Efficiency">
+    <article class="row pub" data-selected data-theme="Efficient" data-tags="Mid/Post-Training, Scaling Laws">
       <div class="thumb"><img src="images/cosmos.png" alt="COSMOS overview"></div>
       <div>
         <h3>COSMOS: Predictable and Cost-Effective Adaptation of LLMs</h3>
@@ -182,7 +185,7 @@
       <div class="venue">2025</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Reasoning, Multimodal, Benchmarks">
+    <article class="row pub" data-selected data-theme="Intelligent" data-tags="Multimodal, Reasoning, Evaluation & Benchmarks">
       <div class="thumb"><img src="images/spatialeval.png" alt="SpatialEval overview"></div>
       <div>
         <h3>Is A Picture Worth A Thousand Words? Delving Into Spatial Reasoning for Vision Language Models</h3>
@@ -193,7 +196,7 @@
       <div class="venue"><em>NeurIPS</em>, 2024</div>
     </article>
 
-    <article class="row pub" data-selected data-tags="Reasoning, Decoding">
+    <article class="row pub" data-selected data-theme="Reliable" data-tags="Decoding, Safety & Robustness">
       <div class="thumb"><img src="images/gad.png" alt="Grammar-Aligned Decoding overview"></div>
       <div>
         <h3>Grammar-Aligned Decoding</h3>
@@ -253,62 +256,83 @@
   document.getElementById("updated").textContent =
     modified.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
 
-  // ----- Publications: Selected/All view + tag filtering -----
-  // Selecting tags shows papers that have ANY selected tag. State lives in ?view=all&tags=... so it is shareable.
+  // ----- Publications: Selected/All view, theme row, topic tags -----
+  // A paper shows if it is in the current view, matches the chosen theme (if any),
+  // and has ANY selected topic (if any). State lives in ?view=all&theme=...&tags=... so it is shareable.
   const pubs = [...document.querySelectorAll(".pub")];
-  const tagsOf = el => el.dataset.tags.split(",").map(t => t.trim()).filter(Boolean);
+  const THEMES = ["Efficient", "Intelligent", "Reliable"];
+  // Topics are shown in this order (core research first); topics not listed go last, alphabetically.
+  const TOPIC_ORDER = ["Agent Orchestration", "Skills & Harness", "Mid/Post-Training", "Self-Evolving Agents", "Multi-Agent Systems",
+    "Deep Research", "Evaluation & Benchmarks", "Reasoning", "Safety & Robustness",
+    "Scaling Laws", "Web Agents", "Synthetic Data", "Multimodal", "Decoding"];
+  const rank = t => (TOPIC_ORDER.indexOf(t) + 1) || TOPIC_ORDER.length + 1;
+  const byTopicOrder = (a, b) => rank(a) - rank(b) || a.localeCompare(b);
+  const tagsOf = el => el.dataset.tags.split(",").map(t => t.trim()).filter(Boolean).sort(byTopicOrder);
   const params = new URLSearchParams(location.search);
   let view = params.get("view") === "all" ? "all" : "selected";
+  let theme = THEMES.includes(params.get("theme")) ? params.get("theme") : "";
   const active = new Set((params.get("tags") || "").split(",").filter(Boolean));
-  const filterBar = document.getElementById("tag-filter");
+  const themeBar = document.getElementById("theme-filter");
+  const tagBar = document.getElementById("tag-filter");
 
-  const makeTag = (name, label = name) => {
+  const chip = (cls, label, onClick, data) => {
     const b = document.createElement("button");
-    b.className = "tag";
-    b.dataset.tag = name;
+    b.className = cls;
     b.innerHTML = label;
-    b.addEventListener("click", () => toggle(name));
+    Object.assign(b.dataset, data);
+    b.addEventListener("click", onClick);
     return b;
   };
-  pubs.forEach(p => tagsOf(p).forEach(t => p.querySelector(".tags").append(makeTag(t))));
+  const setTheme = t => { theme = theme === t ? "" : t; render(); };
+  const toggleTag = t => { active.has(t) ? active.delete(t) : active.add(t); render(); };
+
+  // Chips on each paper: theme first, then topics.
+  pubs.forEach(p => {
+    const box = p.querySelector(".tags");
+    box.append(chip("tag theme", p.dataset.theme, () => setTheme(p.dataset.theme), { theme: p.dataset.theme }));
+    tagsOf(p).forEach(t => box.append(chip("tag", t, () => toggleTag(t), { tag: t })));
+  });
 
   document.querySelectorAll(".view-switch button").forEach(b =>
     b.addEventListener("click", () => { view = b.dataset.view; render(); }));
 
-  function toggle(name) {
-    if (!name) active.clear();
-    else active.has(name) ? active.delete(name) : active.add(name);
-    render();
-  }
+  function renderBars(inView) {
+    const themeCounts = new Map(THEMES.map(t => [t, inView.filter(p => p.dataset.theme === t).length]));
+    themeBar.replaceChildren(
+      chip("tag theme", "All", () => { theme = ""; active.clear(); render(); }, { theme: "" }),
+      ...THEMES.filter(t => themeCounts.get(t)).map(t =>
+        chip("tag theme", t, () => setTheme(t), { theme: t })));
 
-  // Rebuild the filter bar from the papers in the current view, so counts match what's shown.
-  function renderFilterBar(inView) {
+    // Topics come from papers in the current view and theme.
     const counts = new Map();
-    inView.forEach(p => tagsOf(p).forEach(t => counts.set(t, (counts.get(t) || 0) + 1)));
+    inView.filter(p => !theme || p.dataset.theme === theme)
+      .forEach(p => tagsOf(p).forEach(t => counts.set(t, (counts.get(t) || 0) + 1)));
     [...active].forEach(t => counts.has(t) || active.delete(t));
-    const tags = [...counts.keys()].sort((a, b) => counts.get(b) - counts.get(a) || a.localeCompare(b));
-    filterBar.querySelectorAll(".tag").forEach(b => b.remove());
-    filterBar.append(makeTag("", "All"));
-    tags.forEach(t => filterBar.append(makeTag(t, `${t}<sup>${counts.get(t)}</sup>`)));
+    const topics = [...counts.keys()].sort(byTopicOrder);
+    tagBar.replaceChildren(...topics.map(t => chip("tag", t, () => toggleTag(t), { tag: t })));
   }
 
   function render() {
     const inView = pubs.filter(p => view === "all" || p.hasAttribute("data-selected"));
-    renderFilterBar(inView);
+    if (theme && !inView.some(p => p.dataset.theme === theme)) theme = "";
+    renderBars(inView);
     let shown = 0;
     pubs.forEach(p => {
-      const match = inView.includes(p) && (active.size === 0 || tagsOf(p).some(t => active.has(t)));
+      const match = inView.includes(p) && (!theme || p.dataset.theme === theme) &&
+        (active.size === 0 || tagsOf(p).some(t => active.has(t)));
       p.hidden = !match;
       if (match) shown++;
     });
     document.querySelectorAll(".tag").forEach(b => {
-      b.classList.toggle("active", b.dataset.tag ? active.has(b.dataset.tag) : active.size === 0);
+      if ("theme" in b.dataset) b.classList.toggle("active", b.dataset.theme === theme);
+      else b.classList.toggle("active", active.has(b.dataset.tag));
     });
     document.querySelectorAll(".view-switch button").forEach(b =>
       b.classList.toggle("active", b.dataset.view === view));
     document.getElementById("pub-empty").hidden = shown > 0;
     const url = new URL(location);
     view === "all" ? url.searchParams.set("view", "all") : url.searchParams.delete("view");
+    theme ? url.searchParams.set("theme", theme) : url.searchParams.delete("theme");
     active.size ? url.searchParams.set("tags", [...active].join(",")) : url.searchParams.delete("tags");
     history.replaceState(null, "", url);
   }
